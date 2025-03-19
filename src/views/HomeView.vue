@@ -83,7 +83,7 @@
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div
-          class="service-card bg-[#121212] rounded-xl shadow-lg p-8 text-center hover:bg-gray-700 hover:scale-105 transition-all duration-300"
+          class="bg-[#1e1e1e] rounded-xl shadow-lg p-8 text-center hover:bg-[#2d2d2d] hover:scale-105 transition-all duration-300"
         >
           <Box
             class="mx-auto mb-5 text-white opacity-80 hover:opacity-100 transition-opacity"
@@ -99,7 +99,7 @@
           </p>
         </div>
         <div
-          class="service-card bg-[#1a1a1a] rounded-xl shadow-md p-8 text-center hover:bg-[#3a3a3a] hover:scale-105 transition-all duration-300"
+          class="bg-[#1e1e1e] rounded-xl shadow-lg p-8 text-center hover:bg-[#2d2d2d] hover:scale-105 transition-all duration-300"
         >
           <Images
             class="mx-auto mb-5 text-white opacity-80 hover:opacity-100 transition-opacity"
@@ -115,7 +115,7 @@
           </p>
         </div>
         <div
-          class="service-card bg-[#080808] rounded-xl shadow-md p-8 text-center hover:bg-[#212121] hover:scale-105 transition-all duration-300"
+          class="bg-[#1e1e1e] rounded-xl shadow-lg p-8 text-center hover:bg-[#2d2d2d] hover:scale-105 transition-all duration-300"
         >
           <MonitorPlay
             class="mx-auto mb-5 text-white opacity-80 hover:opacity-100 transition-opacity"
@@ -132,7 +132,7 @@
           </p>
         </div>
         <div
-          class="service-card bg-[#2b2b2b] rounded-xl shadow-md p-8 text-center hover:bg-[#424242] hover:scale-105 transition-all duration-300"
+          class="bg-[#1e1e1e] rounded-xl shadow-lg p-8 text-center hover:bg-[#2d2d2d] hover:scale-105 transition-all duration-300"
         >
           <Layers2
             class="mx-auto mb-5 text-white opacity-80 hover:opacity-100 transition-opacity"
@@ -167,7 +167,7 @@
                 class="text-lg font-medium py-4 px-8 rounded-lg transition-all duration-300 flex justify-between items-center"
                 :class="{
                   'bg-emerald-600 text-white shadow-md': selected === tab.id,
-                  'text-gray-400 hover:bg-[#1c1b1f] hover:text-gray-100':
+                  'text-gray-400 hover:bg-[#2d2d2d] hover:text-gray-100':
                     selected !== tab.id,
                 }"
                 @click="selected = tab.id"
@@ -181,7 +181,7 @@
             </div>
           </div>
           <div
-            class="md:w-2/3 lg:w-3/4 bg-[#212327] p-10 rounded-xl shadow-md mt-8 md:mt-0"
+            class="md:w-2/3 lg:w-3/4 bg-[#1e1e1e] p-10 rounded-xl shadow-md mt-8 md:mt-0"
           >
             <transition name="fade" mode="out-in">
               <div v-if="selected">
@@ -337,7 +337,7 @@
           </a>
         </div>
         <div
-          class="flex flex-col sm:flex-row justify-between items-center mt-12 text-gray-100 space-y-6 sm:space-y-0 sm:space-x-8"
+          class="flex flex-col sm:flex-row justify-between items-center px-24 mt-12 text-gray-100 space-y-6 sm:space-y-0 sm:space-x-8"
         >
           <div class="text-center">
             <h3 class="text-lg font-semibold">Location</h3>

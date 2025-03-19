@@ -4,7 +4,7 @@
     <nav
       :class="[
         'fixed top-0 left-0 w-full flex justify-between items-center px-8 py-6 lg:px-28 transition-all duration-300 z-50',
-        isScrolled ? 'bg-gray-950 shadow-lg py-4' : 'bg-transparent',
+        isScrolled ? 'bg-[#121212] shadow-lg py-4' : 'bg-transparent',
       ]"
     >
       <!-- Logo -->
@@ -28,12 +28,13 @@
       </ul>
 
       <!-- Resume Button (Hidden on Small Screens) -->
-      <router-link
-        to="/"
+      <a
+        href="/docs/resume.pdf"
+        download="resume"
         class="hidden md:block text-base lg:text-lg font-semibold px-6 py-2 bg-emerald-600 text-white rounded-full shadow-md hover:bg-emerald-700 transition-all duration-300"
       >
         Resume
-      </router-link>
+      </a>
 
       <!-- Mobile Menu Icon -->
       <button @click="toggleMenu" class="md:hidden text-white">
