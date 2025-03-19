@@ -1,61 +1,61 @@
 <template>
-  <div class="bg-[#F9FAFB] text-[#1F2937] font-sans">
+  <div class="bg-[#121212] text-gray-100 font-sans">
     <!-- Sidebar -->
     <aside class="fixed bottom-0 left-4 z-50 hidden md:block">
       <div class="flex flex-col items-center">
         <Dribbble
-          class="mb-6 text-[#10B981] hover:text-[#ea4c89] transition-colors"
+          class="mb-6 text-emerald-500 hover:text-[#ea4c89] transition-colors"
           :size="24"
         />
         <Instagram
-          class="mb-6 text-[#10B981] hover:text-[#e1306c] transition-colors"
+          class="mb-6 text-emerald-500 hover:text-[#e1306c] transition-colors"
           :size="24"
         />
         <Github
-          class="mb-6 text-[#10B981] hover:text-[#4078c0] transition-colors"
+          class="mb-6 text-emerald-500 hover:text-[#4078c0] transition-colors"
           :size="24"
         />
         <Linkedin
-          class="mb-6 text-[#10B981] hover:text-[#0077b5] transition-colors"
+          class="mb-6 text-emerald-500 hover:text-[#0077b5] transition-colors"
           :size="24"
         />
         <div
-          class="border border-[#10B981] opacity-50 h-56 w-0 mt-6 transition-all hover:opacity-100"
+          class="border border-emerald-500 opacity-50 h-56 w-0 mt-6 transition-all hover:opacity-100"
         ></div>
       </div>
     </aside>
 
     <!-- Hero Section -->
     <section
-      class="w-full h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-[#F9FAFB] to-[#F3F4F6]"
+      class="w-full h-screen flex items-center justify-center relative overflow-hidden"
     >
       <div class="absolute inset-0">
         <img
           src="/images/line.png"
           alt="Background"
-          class="w-full h-full object-cover opacity-20 transition-opacity duration-500 hover:opacity-30"
+          class="w-full h-full object-cover opacity-10 transition-opacity duration-500 hover:opacity-20"
         />
       </div>
       <div class="relative text-center z-10 px-4 sm:px-6 lg:px-8">
         <h2
-          class="text-2xl sm:text-3xl md:text-4xl font-light tracking-widest animate-fadeIn"
+          class="text-2xl sm:text-3xl md:text-4xl font-light tracking-widest text-gray-300 animate-fadeIn"
         >
           Hello, I'm
         </h2>
         <h1
-          class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mt-3 bg-clip-text text-transparent bg-gradient-to-r from-[#10B981] to-[#6EE7B7] animate-fadeIn"
+          class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mt-3 bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-300 animate-fadeIn"
           style="animation-delay: 0.2s"
         >
           Ejikeme Chelsea
         </h1>
         <h3
-          class="text-xl sm:text-2xl md:text-3xl font-semibold text-[#10B981] mt-5 animate-fadeIn"
+          class="text-xl sm:text-2xl md:text-3xl font-semibold text-emerald-500 mt-5 animate-fadeIn"
           style="animation-delay: 0.4s"
         >
           I am {{ displayText }}
         </h3>
         <p
-          class="text-base sm:text-lg md:text-xl mt-6 max-w-3xl mx-auto leading-relaxed text-[#6B7280] animate-fadeIn"
+          class="text-base sm:text-lg md:text-xl mt-6 max-w-3xl mx-auto leading-relaxed text-gray-400 animate-fadeIn"
           style="animation-delay: 0.6s"
         >
           I specialize in bringing ideas to life through stunning visuals,
@@ -63,7 +63,7 @@
         </p>
         <a
           href="#contact"
-          class="mt-10 inline-flex items-center bg-[#10B981] text-white py-3 px-10 rounded-full font-semibold text-lg shadow-lg hover:bg-[#059669] hover:scale-110 transition-all duration-300"
+          class="mt-10 inline-flex items-center bg-emerald-600 text-white py-3 px-10 rounded-full font-semibold text-lg shadow-lg hover:bg-emerald-700 hover:scale-110 transition-all duration-300"
         >
           Contact Me
         </a>
@@ -76,77 +76,75 @@
     >
       <div class="mb-12 text-center">
         <h2
-          class="text-4xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gray-800 animate-slideUp"
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-100 animate-slideUp"
         >
           My Specialties
         </h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div
-          class="service-card bg-[#FFFFFF] rounded-xl shadow-md p-8 text-center hover:bg-[#F9FAFB] hover:scale-105 transition-all duration-300"
+          class="service-card bg-[#121212] rounded-xl shadow-lg p-8 text-center hover:bg-gray-700 hover:scale-105 transition-all duration-300"
         >
-          <img
-            src="/icons/box.svg"
-            alt="3D Design Icon"
-            class="w-14 mx-auto mb-5 opacity-80 hover:opacity-100 transition-opacity"
+          <Box
+            class="mx-auto mb-5 text-white opacity-80 hover:opacity-100 transition-opacity"
+            :size="52"
           />
           <h3
-            class="text-[#1F2937] text-2xl font-semibold hover:text-[#10B981] transition-colors"
+            class="text-gray-100 text-2xl font-semibold hover:text-emerald-500 transition-colors"
           >
             3D Design
           </h3>
-          <p class="text-[#6B7280] mt-2">
+          <p class="text-gray-400 mt-2">
             Creating realistic and interactive 3D models.
           </p>
         </div>
         <div
-          class="service-card bg-[#FFFFFF] rounded-xl shadow-md p-8 text-center hover:bg-[#F9FAFB] hover:scale-105 transition-all duration-300"
+          class="service-card bg-[#1a1a1a] rounded-xl shadow-md p-8 text-center hover:bg-[#3a3a3a] hover:scale-105 transition-all duration-300"
         >
-          <img
-            src="/icons/images.svg"
-            alt="Flyer Design Icon"
-            class="w-14 mx-auto mb-5 opacity-80 hover:opacity-100 transition-opacity"
+          <Images
+            class="mx-auto mb-5 text-white opacity-80 hover:opacity-100 transition-opacity"
+            :size="52"
           />
           <h3
-            class="text-[#1F2937] text-2xl font-semibold hover:text-[#10B981] transition-colors"
+            class="text-gray-100 text-2xl font-semibold hover:text-emerald-500 transition-colors"
           >
             Flyer Design
           </h3>
-          <p class="text-[#6B7280] mt-2">
+          <p class="text-gray-400 mt-2">
             Designing eye-catching promotional flyers.
           </p>
         </div>
         <div
-          class="service-card bg-[#FFFFFF] rounded-xl shadow-md p-8 text-center hover:bg-[#F9FAFB] hover:scale-105 transition-all duration-300"
+          class="service-card bg-[#080808] rounded-xl shadow-md p-8 text-center hover:bg-[#212121] hover:scale-105 transition-all duration-300"
         >
-          <img
-            src="/icons/monitor-play.svg"
-            alt="Motion Graphics Icon"
-            class="w-14 mx-auto mb-5 opacity-80 hover:opacity-100 transition-opacity"
+          <MonitorPlay
+            class="mx-auto mb-5 text-white opacity-80 hover:opacity-100 transition-opacity"
+            :size="52"
           />
+
           <h3
-            class="text-[#1F2937] text-2xl font-semibold hover:text-[#10B981] transition-colors"
+            class="text-gray-100 text-2xl font-semibold hover:text-emerald-500 transition-colors"
           >
             Motion Graphics
           </h3>
-          <p class="text-[#6B7280] mt-2">
+          <p class="text-gray-400 mt-2">
             Creating engaging animated graphics and videos.
           </p>
         </div>
         <div
-          class="service-card bg-[#FFFFFF] rounded-xl shadow-md p-8 text-center hover:bg-[#F9FAFB] hover:scale-105 transition-all duration-300"
+          class="service-card bg-[#2b2b2b] rounded-xl shadow-md p-8 text-center hover:bg-[#424242] hover:scale-105 transition-all duration-300"
         >
-          <img
-            src="/icons/layers-2.svg"
-            alt="Logo Design Icon"
-            class="w-14 mx-auto mb-5 opacity-80 hover:opacity-100 transition-opacity"
+          <Layers2
+            class="mx-auto mb-5 text-white opacity-80 hover:opacity-100 transition-opacity"
+            :size="52"
           />
+
           <h3
-            class="text-[#1F2937] text-2xl font-semibold hover:text-[#10B981] transition-colors"
+            class="text-gray-100 text-2xl font-semibold hover:text-emerald-500 transition-colors"
           >
             Logo Design
           </h3>
-          <p class="text-[#6B7280] mt-2">
+          <p class="text-gray-400 mt-2">
             Crafting unique and professional brand logos.
           </p>
         </div>
@@ -154,7 +152,7 @@
     </section>
 
     <!-- Experience, Education, Skills Section -->
-    <section class="bg-[#F3F4F6] text-[#1F2937]">
+    <section class="">
       <div
         class="mx-auto w-full max-w-7xl px-6 sm:px-12 md:px-16 py-16 md:py-24 lg:py-32"
       >
@@ -168,36 +166,36 @@
                 :key="index"
                 class="text-lg font-medium py-4 px-8 rounded-lg transition-all duration-300 flex justify-between items-center"
                 :class="{
-                  'bg-[#10B981] text-white shadow-md': selected === tab.id,
-                  'text-[#6B7280] hover:bg-[#E5E7EB] hover:text-[#1F2937]':
+                  'bg-emerald-600 text-white shadow-md': selected === tab.id,
+                  'text-gray-400 hover:bg-[#1c1b1f] hover:text-gray-100':
                     selected !== tab.id,
                 }"
                 @click="selected = tab.id"
               >
                 {{ tab.label }}
                 <ArrowUpRight
-                  :color="selected === tab.id ? 'white' : '#10B981'"
+                  :color="selected === tab.id ? 'white' : 'emerald-500'"
                   :size="28"
                 />
               </button>
             </div>
           </div>
           <div
-            class="md:w-2/3 lg:w-3/4 bg-[#FFFFFF] p-10 rounded-xl shadow-md mt-8 md:mt-0"
+            class="md:w-2/3 lg:w-3/4 bg-[#212327] p-10 rounded-xl shadow-md mt-8 md:mt-0"
           >
             <transition name="fade" mode="out-in">
               <div v-if="selected">
                 <div v-if="selected === 'experience'" key="experience">
-                  <h3 class="text-3xl font-semibold text-[#1F2937] mb-6">
+                  <h3 class="text-3xl font-semibold text-gray-100 mb-6">
                     Experience
                   </h3>
                   <div class="space-y-6">
                     <div>
-                      <p class="font-medium text-xl text-[#10B981]">
+                      <p class="font-medium text-xl text-emerald-500">
                         Software Engineer - XYZ Company
                       </p>
-                      <p class="text-sm text-[#6B7280]">2020 - Present</p>
-                      <p class="mt-3 text-[#1F2937]">
+                      <p class="text-sm text-gray-400">2020 - Present</p>
+                      <p class="mt-3 text-gray-100">
                         Developed and maintained web applications using modern
                         technologies.
                       </p>
@@ -205,43 +203,43 @@
                   </div>
                 </div>
                 <div v-if="selected === 'education'" key="education">
-                  <h3 class="text-3xl font-semibold text-[#1F2937] mb-6">
+                  <h3 class="text-3xl font-semibold text-gray-100 mb-6">
                     Education
                   </h3>
                   <div class="space-y-6">
                     <div>
-                      <p class="font-medium text-xl text-[#10B981]">
+                      <p class="font-medium text-xl text-emerald-500">
                         Bells University Of Technology
                       </p>
-                      <p class="text-sm text-[#6B7280]">2018 - 2023</p>
-                      <p class="mt-3 text-[#1F2937]">
+                      <p class="text-sm text-gray-400">2018 - 2023</p>
+                      <p class="mt-3 text-gray-100">
                         B.Tech in Computer Science
                       </p>
                     </div>
                   </div>
                 </div>
                 <div v-if="selected === 'skills'" key="skills">
-                  <h3 class="text-3xl font-semibold text-[#1F2937] mb-6">
+                  <h3 class="text-3xl font-semibold text-gray-100 mb-6">
                     Skills
                   </h3>
                   <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
                     <div
-                      class="bg-[#10B981] p-4 rounded-lg text-center text-white font-medium hover:bg-[#059669] transition-colors"
+                      class="bg-emerald-600 p-4 rounded-lg text-center text-white font-medium hover:bg-emerald-700 transition-colors"
                     >
                       Adobe Illustrator
                     </div>
                     <div
-                      class="bg-[#10B981] p-4 rounded-lg text-center text-white font-medium hover:bg-[#059669] transition-colors"
+                      class="bg-emerald-600 p-4 rounded-lg text-center text-white font-medium hover:bg-emerald-700 transition-colors"
                     >
                       Blender
                     </div>
                     <div
-                      class="bg-[#10B981] p-4 rounded-lg text-center text-white font-medium hover:bg-[#059669] transition-colors"
+                      class="bg-emerald-600 p-4 rounded-lg text-center text-white font-medium hover:bg-emerald-700 transition-colors"
                     >
                       Adobe Photoshop
                     </div>
                     <div
-                      class="bg-[#10B981] p-4 rounded-lg text-center text-white font-medium hover:bg-[#059669] transition-colors"
+                      class="bg-emerald-600 p-4 rounded-lg text-center text-white font-medium hover:bg-emerald-700 transition-colors"
                     >
                       Photoshop
                     </div>
@@ -260,12 +258,12 @@
     >
       <div class="text-center mb-12">
         <h2
-          class="text-4xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#10B981] to-[#6EE7B7] animate-slideUp"
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-100 animate-slideUp"
         >
           My Projects
         </h2>
         <p
-          class="text-[#6B7280] mt-4 text-lg sm:text-xl max-w-3xl mx-auto animate-slideUp"
+          class="text-gray-400 mt-4 text-lg sm:text-xl max-w-3xl mx-auto animate-slideUp"
           style="animation-delay: 0.2s"
         >
           A showcase of my creative work, blending art and technology to craft
@@ -304,12 +302,63 @@
       <div class="flex justify-end mt-10">
         <router-link
           to="/portfolio"
-          class="bg-[#10B981] px-10 py-3 text-white rounded-full font-semibold text-lg hover:bg-[#059669] hover:scale-105 transition-all duration-300 shadow-md"
+          class="bg-emerald-600 px-10 py-3 text-white rounded-full font-semibold text-lg hover:bg-emerald-700 hover:scale-105 transition-all duration-300 shadow-md"
         >
           See More
         </router-link>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <div class="relative overflow-hidden">
+      <div
+        class="mx-auto w-full max-w-7xl px-4 sm:px-6 py-12 md:py-16 lg:py-24 relative z-10"
+      >
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl text-center font-bold text-gray-100 animate-slideUp"
+        >
+          Get In Touch
+        </h2>
+        <p
+          class="text-center text-lg sm:text-xl text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed animate-slideUp"
+          style="animation-delay: 0.2s"
+        >
+          Need eye-catching visuals, stunning 3D designs, or sleek motion
+          graphics? I specialize in bringing ideas to life. My inbox is always
+          open—whether you have a project, a question, or just want to connect!
+        </p>
+        <div class="flex justify-center mt-8">
+          <a
+            :href="emailLink"
+            class="inline-flex items-center bg-emerald-600 text-white font-semibold text-lg sm:text-xl px-8 py-3 rounded-full shadow-md hover:bg-emerald-700 hover:scale-105 transition-all duration-300 animate-slideUp"
+            style="animation-delay: 0.4s"
+          >
+            Say Hello
+          </a>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row justify-between items-center mt-12 text-gray-100 space-y-6 sm:space-y-0 sm:space-x-8"
+        >
+          <div class="text-center">
+            <h3 class="text-lg font-semibold">Location</h3>
+            <p class="text-gray-400 mt-1">Lagos, Nigeria</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-lg font-semibold">Phone</h3>
+            <p class="text-gray-400 mt-1">(+234) 000 000 0000</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-lg font-semibold">Email</h3>
+            <p class="text-gray-400 mt-1">your.email@example.com</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/images/help.png"
+        alt="Decorative corner"
+        class="absolute bottom-0 right-0 w-32 sm:w-40 md:w-48 lg:w-80 opacity-30 pointer-events-none z-0"
+      />
+    </div>
   </div>
 </template>
 
@@ -321,8 +370,14 @@ import {
   Instagram,
   Linkedin,
   Github,
+  Layers2,
 } from "lucide-vue-next";
+import { Box } from "lucide-vue-next";
+import { MonitorPlay } from "lucide-vue-next";
+import { Images } from "lucide-vue-next";
 
+const email = "nwanorohfavoured@gmail.com"; // Replace with your actual email
+const emailLink = ref(`mailto:${email}`);
 const words = ["Creative Designer", "Visual Artist", "Freelancer"];
 const displayText = ref("");
 let i = 0;
@@ -362,7 +417,7 @@ const type = () => {
 onMounted(type);
 </script>
 
-<style>
+<style scoped>
 @keyframes fadeIn {
   from {
     opacity: 0;
